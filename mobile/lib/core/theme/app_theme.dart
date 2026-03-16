@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class AppTheme {
+  static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
+    colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+    scaffoldBackgroundColor: Colors.grey[100],
+    appBarTheme: const AppBarTheme(
+      centerTitle: true,
+    ),
+    inputDecorationTheme: const InputDecorationTheme(
+      border: OutlineInputBorder(),
+    ),
+  );
+}
