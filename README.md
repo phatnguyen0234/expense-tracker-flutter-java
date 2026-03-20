@@ -48,6 +48,109 @@ expense-tracker/
     └── API_SPEC.md
 ```
 
+## 📱 Giao Diện Ứng Dụng (Frontend - Day 14)
+
+### Màn hình chính - Home Screen
+Giao diện chính với header gradient xanh dương, các menu nhanh cho việc quản lý tài chính.
+
+![Home Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/home_screen.png)
+
+**Đặc điểm:**
+- ✨ Gradient header (#5B7DFF → #3E5BDF)
+- 🔐 Nút logout trong header
+- 📌 3 menu nhanh: Thêm giao dịch, Dashboard, Danh mục
+- 🎨 Modern card design với shadow
+
+### Màn hình đăng nhập - Login
+Form đăng nhập đơn giản với xác thực JWT.
+
+![Login Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/login_screen.png)
+
+**Đặc điểm:**
+- ✉️ Nhập email
+- 🔑 Nhập password
+- 🔵 Nút login gradient
+- 🔗 Kết nối REST API với backend
+
+### Màn hình giao dịch - Transactions List
+Danh sách tất cả giao dịch với bộ lọc.
+
+![Transactions Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/transactions_screen.png)
+
+**Đặc điểm:**
+- 📊 Hiển thị tất cả giao dịch (thu/chi)
+- 🔽 Lọc theo tháng
+- 🏷️ Lọc theo loại (tất cả/thu nhập/chi tiêu)
+- ➕ Nút thêm giao dịch (FAB)
+- 🎯 Click để sửa/xóa giao dịch
+
+### Màn hình thêm giao dịch - Add Transaction
+Dialog thêm giao dịch chi tiết.
+
+![Add Transaction](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/add_transaction.png)
+
+**Đặc điểm:**
+- 💰 Nhập số tiền
+- 🏷️ Chọn loại (Thu nhập/Chi tiêu)
+- 📅 Chọn ngày (Date Picker)
+- ⏰ Chọn giờ (Time Picker)
+- 💬 Ghi chú chi tiêu
+- 💾 Lưu/Hủy
+
+### Màn hình dashboard - Statistics
+Thống kê chi tiêu theo danh mục.
+
+![Dashboard Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/dashboard_screen.png)
+
+**Đặc điểm:**
+- 💚 Thẻ thu nhập (xanh)
+- ❤️ Thẻ chi tiêu (đỏ)
+- 🔵 Thẻ cân bằng (xanh dương)
+- 📊 Biểu đồ chi tiêu theo danh mục
+- 💹 Biểu đồ thu nhập theo danh mục
+- 📈 Phần trăm chi tiêu
+
+### Màn hình quản lý danh mục - Categories
+Quản lý các danh mục chi tiêu.
+
+![Categories Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/categories_screen.png)
+
+**Đặc điểm:**
+- 📂 Danh sách danh mục
+- 🏷️ Loại: Chi tiêu/Thu nhập
+- ✏️ Nút chỉnh sửa
+- 🗑️ Nút xóa
+- ➕ Nút thêm danh mục mới
+
+### Màn hình thêm danh mục - Add Category
+Dialog thêm/sửa danh mục.
+
+![Add Category](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/add_category.png)
+
+**Đặc điểm:**
+- 📝 Nhập tên danh mục
+- 🏷️ Chọn loại (Chi tiêu/Thu nhập)
+- 💾 Lưu/Hủy
+
+## 🎨 Design System
+
+### Màu sắc
+| Thành phần | Hex Code | Sử dụng |
+|-----------|----------|--------|
+| Primary | `#5B7DFF` | Header, Button, Active |
+| Primary Dark | `#3E5BDF` | Gradient, Hover |
+| Success | `#4CAF50` | Income, Positive |
+| Error | `#F44336` | Expense, Delete |
+| Background | `#F8F9FB` | App background |
+| Surface | `#FFFFFF` | Cards, Dialog |
+
+### Typography
+- **Font**: Google Fonts - Inter
+- **Headline**: 22px Bold
+- **Title**: 18px SemiBold  
+- **Body**: 14px Regular
+- **Caption**: 12px Regular
+
 ## 🚀 Cài Đặt & Chạy
 
 ### Backend (Spring Boot)
@@ -87,7 +190,7 @@ cd mobile
 cp .env.example .env
 
 # Edit .env với server URL của bạn
-# BASE_URL=http://localhost:8080/api/v1
+# API_BASE_URL=http://localhost:8080/api/v1
 ```
 
 **Bước 2: Cài dependencies**
