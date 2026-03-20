@@ -53,7 +53,7 @@ expense-tracker/
 ### Màn hình chính - Home Screen
 Giao diện chính với header gradient xanh dương, các menu nhanh cho việc quản lý tài chính.
 
-![Home Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/home_screen.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/01_home_screen.png" alt="Home Screen" width="300"/>
 
 **Đặc điểm:**
 - ✨ Gradient header (#5B7DFF → #3E5BDF)
@@ -64,7 +64,7 @@ Giao diện chính với header gradient xanh dương, các menu nhanh cho việ
 ### Màn hình đăng nhập - Login
 Form đăng nhập đơn giản với xác thực JWT.
 
-![Login Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/login_screen.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/02_login_screen.png" alt="Login Screen" width="300"/>
 
 **Đặc điểm:**
 - ✉️ Nhập email
@@ -75,7 +75,7 @@ Form đăng nhập đơn giản với xác thực JWT.
 ### Màn hình giao dịch - Transactions List
 Danh sách tất cả giao dịch với bộ lọc.
 
-![Transactions Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/transactions_screen.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/03_transactions_screen.png" alt="Transactions Screen" width="300"/>
 
 **Đặc điểm:**
 - 📊 Hiển thị tất cả giao dịch (thu/chi)
@@ -87,7 +87,7 @@ Danh sách tất cả giao dịch với bộ lọc.
 ### Màn hình thêm giao dịch - Add Transaction
 Dialog thêm giao dịch chi tiết.
 
-![Add Transaction](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/add_transaction.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/04_add_transaction.png" alt="Add Transaction" width="300"/>
 
 **Đặc điểm:**
 - 💰 Nhập số tiền
@@ -100,7 +100,7 @@ Dialog thêm giao dịch chi tiết.
 ### Màn hình dashboard - Statistics
 Thống kê chi tiêu theo danh mục.
 
-![Dashboard Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/dashboard_screen.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/05_dashboard_screen.png" alt="Dashboard Screen" width="300"/>
 
 **Đặc điểm:**
 - 💚 Thẻ thu nhập (xanh)
@@ -113,7 +113,7 @@ Thống kê chi tiêu theo danh mục.
 ### Màn hình quản lý danh mục - Categories
 Quản lý các danh mục chi tiêu.
 
-![Categories Screen](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/categories_screen.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/06_categories_screen.png" alt="Categories Screen" width="300"/>
 
 **Đặc điểm:**
 - 📂 Danh sách danh mục
@@ -125,7 +125,7 @@ Quản lý các danh mục chi tiêu.
 ### Màn hình thêm danh mục - Add Category
 Dialog thêm/sửa danh mục.
 
-![Add Category](https://github.com/phatnguyen0234/expense-tracker-flutter-java/assets/screenshots/add_category.png)
+<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/07_add_category.png" alt="Add Category" width="300"/>
 
 **Đặc điểm:**
 - 📝 Nhập tên danh mục
