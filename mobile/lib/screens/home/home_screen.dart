@@ -7,112 +7,110 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Expense Tracker", style: TextStyle(fontWeight: FontWeight.bold)),
-        centerTitle: true,
-        elevation: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: () async {
-              showDialog(
-                context: context,
-                builder: (context) => AlertDialog(
-                  title: const Text('Đăng xuất'),
-                  content: const Text('Bạn có chắc chắn muốn đăng xuất?'),
-                  actions: [
-                    TextButton(
-                      onPressed: () => Navigator.pop(context),
-                      child: const Text('Hủy'),
-                    ),
-                    TextButton(
-                      onPressed: () async {
-                        await AuthService.logout();
-                        if (context.mounted) {
-                          Navigator.pushReplacementNamed(context, "/login");
-                        }
-                      },
-                      child: const Text('Đăng xuất', style: TextStyle(color: Colors.red)),
-                    ),
-                  ],
-                ),
-              );
-            },
-          )
-        ],
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Colors.blue.shade50,
-              Colors.purple.shade50,
-            ],
-          ),
-        ),
-        child: ListView(
-          padding: const EdgeInsets.all(20),
-          children: [
-            // Welcome section
-            Padding(
-              padding: const EdgeInsets.only(top: 20, bottom: 40),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Chào mừng',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey[600],
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Quản lý tài chính của bạn',
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
-                    ),
-                  ),
-                ],
+      body: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          // Header with gradient background
+          Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFF5B7DFF), Color(0xFF3E5BDF)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(24),
+                bottomRight: Radius.circular(24),
               ),
             ),
-
-            // Menu Cards
-            _buildMenuCard(
-              context: context,
-              icon: Icons.add_circle_outline,
-              title: 'Thêm giao dịch',
-              subtitle: 'Ghi lại thu chi hàng ngày',
-              color: Colors.blue,
-              onTap: () => Navigator.pushNamed(context, '/transactions'),
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 16, bottom: 24),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Quản lý tài chính',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  width: 45,
+                  height: 45,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.2),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.logout, color: Colors.white),
+                    onPressed: () async {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: const Text('Đăng xuất'),
+                          content: const Text('Bạn có chắc chắn muốn đăng xuất?'),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text('Hủy'),
+                            ),
+                            TextButton(
+                              onPressed: () async {
+                                await AuthService.logout();
+                                if (context.mounted) {
+                                  Navigator.pushReplacementNamed(context, "/login");
+                                }
+                              },
+                              child: const Text('Đăng xuất', style: TextStyle(color: Colors.red)),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 16),
+          ),
 
-            _buildMenuCard(
-              context: context,
-              icon: Icons.bar_chart_rounded,
-              title: 'Dashboard',
-              subtitle: 'Xem thống kê tài chính',
-              color: Colors.green,
-              onTap: () => Navigator.pushNamed(context, '/stats'),
+          // Menu Cards Section
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildMenuCard(
+                  context: context,
+                  icon: Icons.add_circle_outline,
+                  title: 'Thêm giao dịch',
+                  subtitle: 'Ghi lại thu chi hàng ngày',
+                  color: Colors.blue,
+                  onTap: () => Navigator.pushNamed(context, '/transactions'),
+                ),
+                const SizedBox(height: 16),
+                _buildMenuCard(
+                  context: context,
+                  icon: Icons.bar_chart_rounded,
+                  title: 'Dashboard',
+                  subtitle: 'Xem thống kê tài chính',
+                  color: Colors.green,
+                  onTap: () => Navigator.pushNamed(context, '/stats'),
+                ),
+                const SizedBox(height: 16),
+                _buildMenuCard(
+                  context: context,
+                  icon: Icons.category_rounded,
+                  title: 'Danh mục',
+                  subtitle: 'Quản lý các danh mục',
+                  color: Colors.orange,
+                  onTap: () => Navigator.pushNamed(context, '/categories'),
+                ),
+                const SizedBox(height: 20),
+              ],
             ),
-            const SizedBox(height: 16),
-
-            _buildMenuCard(
-              context: context,
-              icon: Icons.category_rounded,
-              title: 'Danh mục',
-              subtitle: 'Quản lý các danh mục',
-              color: Colors.orange,
-              onTap: () => Navigator.pushNamed(context, '/categories'),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
