@@ -50,37 +50,13 @@ expense-tracker/
 
 ## 📱 Giao Diện Ứng Dụng (Frontend - Day 14)
 
-### 📋 Screenshots
-
-<div align="center">
-
-#### Login Screen
-<img src="./screenshots/01_login_screen.png" alt="Login Screen" width="280"/>
-
-#### Home Screen
-<img src="./screenshots/02_home_screen.png" alt="Home Screen" width="280"/>
-
-#### Transactions List
-<img src="./screenshots/03_transactions_screen.png" alt="Transactions Screen" width="280"/>
-
-#### Add Transaction
-<img src="./screenshots/04_add_transaction.png" alt="Add Transaction" width="280"/>
-
-#### Dashboard
-<img src="./screenshots/05_dashboard_screen.png" alt="Dashboard Screen" width="280"/>
-
-#### Categories Management
-<img src="./screenshots/06_categories_screen.png" alt="Categories Screen" width="280"/>
-
-#### Add Category
-<img src="./screenshots/07_add_category.png" alt="Add Category" width="280"/>
-
-</div>
-
 ### Mô tả Chi Tiết Các Màn Hình
 
 #### 🔐 Login Screen
 Form đăng nhập đơn giản với xác thực JWT.
+
+<img src="./screenshots/01_login_screen.png" alt="Login Screen" width="280"/>
+
 - ✉️ Nhập email
 - 🔑 Nhập password
 - 🔵 Nút login gradient
@@ -88,6 +64,9 @@ Form đăng nhập đơn giản với xác thực JWT.
 
 #### 🏠 Home Screen
 Giao diện chính với header gradient xanh dương, các menu nhanh cho việc quản lý tài chính.
+
+<img src="./screenshots/02_home_screen.png" alt="Home Screen" width="280"/>
+
 - ✨ Gradient header (#5B7DFF → #3E5BDF)
 - 🔐 Nút logout trong header
 - 📌 3 menu nhanh: Thêm giao dịch, Dashboard, Danh mục
@@ -95,6 +74,9 @@ Giao diện chính với header gradient xanh dương, các menu nhanh cho việ
 
 #### 📊 Transactions List
 Danh sách tất cả giao dịch với bộ lọc.
+
+<img src="./screenshots/03_transactions_screen.png" alt="Transactions Screen" width="280"/>
+
 - 📊 Hiển thị tất cả giao dịch (thu/chi)
 - 🔽 Lọc theo tháng
 - 🏷️ Lọc theo loại (tất cả/thu nhập/chi tiêu)
@@ -103,6 +85,9 @@ Danh sách tất cả giao dịch với bộ lọc.
 
 #### ➕ Add Transaction
 Dialog thêm giao dịch chi tiết.
+
+<img src="./screenshots/04_add_transaction.png" alt="Add Transaction" width="280"/>
+
 - 💰 Nhập số tiền
 - 🏷️ Chọn loại (Thu nhập/Chi tiêu)
 - 📅 Chọn ngày (Date Picker)
@@ -112,6 +97,9 @@ Dialog thêm giao dịch chi tiết.
 
 #### 📈 Dashboard
 Thống kê chi tiêu theo danh mục.
+
+<img src="./screenshots/05_dashboard_screen.png" alt="Dashboard Screen" width="280"/>
+
 - 💚 Thẻ thu nhập (xanh)
 - ❤️ Thẻ chi tiêu (đỏ)
 - 🔵 Thẻ cân bằng (xanh dương)
@@ -121,6 +109,9 @@ Thống kê chi tiêu theo danh mục.
 
 #### 🏷️ Categories Management
 Quản lý các danh mục chi tiêu.
+
+<img src="./screenshots/06_categories_screen.png" alt="Categories Screen" width="280"/>
+
 - 📂 Danh sách danh mục
 - 🏷️ Loại: Chi tiêu/Thu nhập
 - ✏️ Nút chỉnh sửa
@@ -129,11 +120,12 @@ Quản lý các danh mục chi tiêu.
 
 #### ➕ Add Category
 Dialog thêm/sửa danh mục.
+
+<img src="./screenshots/07_add_category.png" alt="Add Category" width="280"/>
+
 - 📝 Nhập tên danh mục
 - 🏷️ Chọn loại (Chi tiêu/Thu nhập)
 - 💾 Lưu/Hủy
-
-## 🎨 Design System
 
 ### Màu sắc
 | Thành phần | Hex Code | Sử dụng |
