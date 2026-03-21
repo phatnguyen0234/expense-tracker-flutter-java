@@ -50,46 +50,59 @@ expense-tracker/
 
 ## 📱 Giao Diện Ứng Dụng (Frontend - Day 14)
 
-### Màn hình chính - Home Screen
-Giao diện chính với header gradient xanh dương, các menu nhanh cho việc quản lý tài chính.
+### 📋 Screenshots
 
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/01_home_screen.png" alt="Home Screen" width="300"/>
+<div align="center">
 
-**Đặc điểm:**
-- ✨ Gradient header (#5B7DFF → #3E5BDF)
-- 🔐 Nút logout trong header
-- 📌 3 menu nhanh: Thêm giao dịch, Dashboard, Danh mục
-- 🎨 Modern card design với shadow
+#### Login Screen
+<img src="./screenshots/01_login_screen.png" alt="Login Screen" width="280"/>
 
-### Màn hình đăng nhập - Login
+#### Home Screen
+<img src="./screenshots/02_home_screen.png" alt="Home Screen" width="280"/>
+
+#### Transactions List
+<img src="./screenshots/03_transactions_screen.png" alt="Transactions Screen" width="280"/>
+
+#### Add Transaction
+<img src="./screenshots/04_add_transaction.png" alt="Add Transaction" width="280"/>
+
+#### Dashboard
+<img src="./screenshots/05_dashboard_screen.png" alt="Dashboard Screen" width="280"/>
+
+#### Categories Management
+<img src="./screenshots/06_categories_screen.png" alt="Categories Screen" width="280"/>
+
+#### Add Category
+<img src="./screenshots/07_add_category.png" alt="Add Category" width="280"/>
+
+</div>
+
+### Mô tả Chi Tiết Các Màn Hình
+
+#### 🔐 Login Screen
 Form đăng nhập đơn giản với xác thực JWT.
-
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/02_login_screen.png" alt="Login Screen" width="300"/>
-
-**Đặc điểm:**
 - ✉️ Nhập email
 - 🔑 Nhập password
 - 🔵 Nút login gradient
 - 🔗 Kết nối REST API với backend
 
-### Màn hình giao dịch - Transactions List
+#### 🏠 Home Screen
+Giao diện chính với header gradient xanh dương, các menu nhanh cho việc quản lý tài chính.
+- ✨ Gradient header (#5B7DFF → #3E5BDF)
+- 🔐 Nút logout trong header
+- 📌 3 menu nhanh: Thêm giao dịch, Dashboard, Danh mục
+- 🎨 Modern card design với shadow
+
+#### 📊 Transactions List
 Danh sách tất cả giao dịch với bộ lọc.
-
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/03_transactions_screen.png" alt="Transactions Screen" width="300"/>
-
-**Đặc điểm:**
 - 📊 Hiển thị tất cả giao dịch (thu/chi)
 - 🔽 Lọc theo tháng
 - 🏷️ Lọc theo loại (tất cả/thu nhập/chi tiêu)
 - ➕ Nút thêm giao dịch (FAB)
 - 🎯 Click để sửa/xóa giao dịch
 
-### Màn hình thêm giao dịch - Add Transaction
+#### ➕ Add Transaction
 Dialog thêm giao dịch chi tiết.
-
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/04_add_transaction.png" alt="Add Transaction" width="300"/>
-
-**Đặc điểm:**
 - 💰 Nhập số tiền
 - 🏷️ Chọn loại (Thu nhập/Chi tiêu)
 - 📅 Chọn ngày (Date Picker)
@@ -97,12 +110,8 @@ Dialog thêm giao dịch chi tiết.
 - 💬 Ghi chú chi tiêu
 - 💾 Lưu/Hủy
 
-### Màn hình dashboard - Statistics
+#### 📈 Dashboard
 Thống kê chi tiêu theo danh mục.
-
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/05_dashboard_screen.png" alt="Dashboard Screen" width="300"/>
-
-**Đặc điểm:**
 - 💚 Thẻ thu nhập (xanh)
 - ❤️ Thẻ chi tiêu (đỏ)
 - 🔵 Thẻ cân bằng (xanh dương)
@@ -110,24 +119,16 @@ Thống kê chi tiêu theo danh mục.
 - 💹 Biểu đồ thu nhập theo danh mục
 - 📈 Phần trăm chi tiêu
 
-### Màn hình quản lý danh mục - Categories
+#### 🏷️ Categories Management
 Quản lý các danh mục chi tiêu.
-
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/06_categories_screen.png" alt="Categories Screen" width="300"/>
-
-**Đặc điểm:**
 - 📂 Danh sách danh mục
 - 🏷️ Loại: Chi tiêu/Thu nhập
 - ✏️ Nút chỉnh sửa
 - 🗑️ Nút xóa
 - ➕ Nút thêm danh mục mới
 
-### Màn hình thêm danh mục - Add Category
+#### ➕ Add Category
 Dialog thêm/sửa danh mục.
-
-<img src="https://raw.githubusercontent.com/phatnguyen0234/expense-tracker-flutter-java/main/screenshots/07_add_category.png" alt="Add Category" width="300"/>
-
-**Đặc điểm:**
 - 📝 Nhập tên danh mục
 - 🏷️ Chọn loại (Chi tiêu/Thu nhập)
 - 💾 Lưu/Hủy
@@ -427,4 +428,3 @@ Dự án này được xây dựng để học:
 ---
 
 **Happy coding! 🚀**
-
